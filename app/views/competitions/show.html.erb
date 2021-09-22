@@ -3,3 +3,14 @@
   <%= @competition.location %><br>
   <%= @competition.sport %>
 </p>
+
+<section id='teams'>
+  <% @competition.teams.each do |team| %>
+    <section id='team-<%= team.id %>'>
+      <%= team.nickname %>
+      <%= team.hometown %>
+    </section>
+  <% end %>
+</section>
+
+Average Player Age: <%= @competition.average_player_age.round(1) %>
