@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Competition < ApplicationRecord
   has_many :participants
   has_many :teams, through: :participants

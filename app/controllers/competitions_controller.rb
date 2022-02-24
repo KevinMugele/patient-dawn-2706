@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CompetitionsController < ApplicationController
   def index
     @competitions = Competition.all
